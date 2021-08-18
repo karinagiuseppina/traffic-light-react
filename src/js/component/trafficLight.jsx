@@ -10,23 +10,19 @@ const TrafficLight = () => {
 				<div
 					onClick={() => setSelectedColor("red")}
 					className={
-						selectedColor === "red"
-							? "light red glow"
-							: "light red off"
+						"light red" + (selectedColor === "red" ? " glow" : "")
 					}></div>
 				<div
 					onClick={() => setSelectedColor("yellow")}
 					className={
-						selectedColor === "yellow"
-							? "light yellow glow"
-							: "light yellow off"
+						"light yellow" +
+						(selectedColor === "yellow" ? " glow" : "")
 					}></div>
 				<div
 					onClick={() => setSelectedColor("green")}
 					className={
-						selectedColor === "green"
-							? "light green glow"
-							: "light green off"
+						"light green" +
+						(selectedColor === "green" ? " glow" : "")
 					}></div>
 			</div>
 		</div>
